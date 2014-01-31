@@ -37,7 +37,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class BaseSherlockFragmentActivity extends SherlockFragmentActivity {
 	private static String TAG = AppFragmentActivity.class
-			.getSimpleName().substring(0, 22);
+			.getSimpleName();
 
 	private BroadcastReceiver networkStateReceiver;
 	private TextView noInternetConnnectivityView, notLoadedView;

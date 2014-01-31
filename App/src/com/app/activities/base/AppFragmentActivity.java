@@ -17,8 +17,7 @@ import com.app.views.YouTubePlayer;
 public class AppFragmentActivity extends BaseSherlockFragmentActivity implements
 		ActivityInterface {
 
-	private static String TAG = AppFragmentActivity.class.getSimpleName()
-			.substring(0, 22);
+	private static String TAG = AppFragmentActivity.class.getSimpleName();
 
 	protected App application;
 	private UserProfileRespReceiver userProfileResponseReceiver;
