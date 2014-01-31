@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="feed_list_num_columns">1</integer>
+    <integer name="rewards_list_num_columns">4</integer>
+    <integer name="profile_sales_num_columns">3</integer>
+    <integer name="sale_list_num_columns">2</integer>
+    <integer name="store_list_num_columns">1</integer>
+    <integer name="following_grid_num_columns">2</integer>
+    <integer name="profile_loves_left_right_weight">20</integer>
+    <integer name="profile_loves_gridview_weight">760</integer>
+    <integer name="profile_count_layout_weight">240</integer>
+
+</resources>

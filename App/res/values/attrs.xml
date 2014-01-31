@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<declare-styleable name="PageControl">
+		<attr name="selectedDrawable" format="reference"></attr>
+		<attr name="unSelectedDrawable" format="reference" />
+		<attr name="indicatorGap" format="dimension" />
+	</declare-styleable>
+	<declare-styleable name="ProgressButton">
+		<attr name="loadingDrawable" format="reference" />
+		<attr name="loadingText" format="reference|string" />
+		<attr name="selectedText" format="reference|string" />
+		<attr name="unselectedText" format="reference|string" />
+		<attr name="loading" format="reference|boolean" />
+		<attr name="autoDisableClickable" format="reference|boolean" />
+	</declare-styleable>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">OpenSky</string>
+	<string name="action_done">Done</string>
+	<string name="search_hint">Enter search text here&#8230;</string>
+	<string name="generic_error">Looks like something went wrong. Try again later</string>
+	<string name="no_internet">No Internet Connection.</string>
+	<string name="empty_string"></string>
+	<string name="loading_">Loading&#8230;</string>
+	<!-- Profiles -->
+	<string name="Release">m</string>
+	<string name="Debug">dev2</string>
+	<!-- Current Profile -->
+	<string name="debugprofile">@string/Debug</string>
+	<string name="productionprofile">@string/Release</string>
+	<string name="public_api">http://%1$s.opensky.com/api/v2/</string>
+</resources>
