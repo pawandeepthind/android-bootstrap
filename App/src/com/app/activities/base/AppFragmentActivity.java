@@ -13,8 +13,6 @@ import com.app.receivers.UserProfileRespReceiver;
 import com.app.services.ProfileSyncIntentService;
 import com.app.util.Logger;
 import com.app.views.YouTubePlayer;
-import com.google.analytics.tracking.android.EasyTracker;
-import com.urbanairship.UAirship;
 
 public class AppFragmentActivity extends BaseSherlockFragmentActivity implements
 		ActivityInterface {
@@ -42,9 +40,6 @@ public class AppFragmentActivity extends BaseSherlockFragmentActivity implements
 		super.onStart();
 		registerActivityReceivers();
 
-		UAirship.shared().getAnalytics().activityStarted(this);
-		EasyTracker.getInstance(this).activityStart(this);
-
 		if (isProfileSyncOnResumeEnabled()) {
 			Logger.i(this.getClass().getSimpleName(),
 					"Start profile sync service");
@@ -55,8 +50,6 @@ public class AppFragmentActivity extends BaseSherlockFragmentActivity implements
 	@Override
 	public void onStop() {
 		super.onStop();
-		UAirship.shared().getAnalytics().activityStopped(this);
-		EasyTracker.getInstance(this).activityStop(this);
 		deregisterActivityReceivers();
 	}
 

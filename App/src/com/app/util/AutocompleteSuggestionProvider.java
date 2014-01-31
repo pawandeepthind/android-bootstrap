@@ -12,7 +12,7 @@ import android.provider.BaseColumns;
 public class AutocompleteSuggestionProvider extends ContentProvider {
 	private static final String LOG_TAG = "OS AutoComplete";
 
-	public static final String AUTHORITY = "com.opensky.search_suggestion_provider";
+	public static final String AUTHORITY = "com.app.search_suggestion_provider";
 	public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY
 			+ "/search");
 

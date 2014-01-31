@@ -359,7 +359,7 @@ public class Utils {
 			String type, String id, ActivityInterface act) {
 		Pattern wordMatcher = Pattern.compile(Pattern.quote(expression));
 
-		String viewURL = "opensky://feed?type=" + type + "&id=" + id + "&link=";
+		String viewURL = "app://feed?type=" + type + "&id=" + id + "&link=";
 
 		tv.setLinkTextColor(ctx.getResources().getColor(R.color.blue));
 		Linkify.addLinks(tv, wordMatcher, viewURL);

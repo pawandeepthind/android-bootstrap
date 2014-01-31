@@ -9,7 +9,7 @@ import com.app.util.Logger;
 
 public class UserProfileRespReceiver extends BroadcastReceiver {
 	public static final String TAG = "UserProfileReceiver";
-	public static final String ACTION_RESP = "com.opensky.intent.action.RECEIVE_USERPROFILERESPONSE";
+	public static final String ACTION_RESP = "com.app.intent.action.RECEIVE_USERPROFILERESPONSE";
 	ActivityInterface activity;
 
 	public UserProfileRespReceiver(ActivityInterface activity) {

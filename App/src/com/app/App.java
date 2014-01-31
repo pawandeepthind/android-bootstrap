@@ -7,7 +7,6 @@ import com.app.helper.AppHelper;
 import com.app.helper.UserSessionHelper;
 import com.app.util.Constants;
 import com.app.util.Utils;
-import com.urbanairship.push.PushManager;
 
 public class App extends Application {
 	public static String TAG = App.class.getSimpleName();
@@ -16,10 +15,10 @@ public class App extends Application {
 	public void onCreate() {
 		super.onCreate();
 
-		// Init OpenSky helper
+		// Init helper
 		AppHelper.init(this);
 
-		// Init OpenSky User Session
+		// Init User Session
 		UserSessionHelper.init(this);
 
 		// Printing environment information
@@ -36,10 +35,6 @@ public class App extends Application {
 		envInfo.append("Server Link: ")
 				.append(this.getResources().getString(R.string.public_api,
 						Utils.getAppProfile(this))).append(Constants.NEWLINE);
-		envInfo.append("APID: ")
-				.append(PushManager.shared().getAPID() != null ? PushManager
-						.shared().getAPID() : "Not set yet")
-				.append(Constants.NEWLINE);
 		envInfo.append("********").append(Constants.NEWLINE);
 
 		Log.i("Env:", envInfo.toString());
