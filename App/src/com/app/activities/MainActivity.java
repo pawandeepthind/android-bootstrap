@@ -40,6 +40,7 @@ public class MainActivity extends AppFragmentActivity {
 	}
 
 	protected void startTestActivityBtn() {
-		startActivity(new Intent(this, TestActivity.class));
+		startActivity(new Intent(this, TestActivity.class).putExtra("term",
+				"linkinpark"));
 	}
 }

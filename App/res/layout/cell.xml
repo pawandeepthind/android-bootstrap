@@ -3,21 +3,54 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@color/white"
-	android:orientation="vertical"
-	android:padding="16dp" >
-	<TextView
-		android:id="@+id/name"
-		style="@style/GreyTextLabel"
-		android:clickable="true"
-		android:text="name" />
-	<TextView
-		android:id="@+id/description"
-		style="@style/GreyTextLabel"
-		android:clickable="true"
-		android:text="some description" />
-	<TextView
-		android:id="@+id/age"
-		style="@style/CellHeadingText"
-		android:clickable="true"
-		android:text="20" />
+	android:orientation="horizontal"
+	android:padding="7dp" >
+	<com.app.views.FadeInNetworkImageView
+		android:id="@+id/artworkUrl60"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:background="@color/creame" />
+	<LinearLayout
+		android:id="@+id/textContentLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/trackName"
+			style="@style/GreyTextLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Track Name"
+			android:textSize="12sp"
+			android:textStyle="bold" />
+		<TextView
+			android:id="@+id/artistName"
+			style="@style/GreyTextLabel"
+			android:text="Artist Name"
+			android:textSize="12sp" />
+		<TextView
+			android:id="@+id/collectionName"
+			style="@style/GreyTextLabel"
+			android:text="Collection Name"
+			android:textSize="12sp" />
+		<LinearLayout
+			android:id="@+id/durationLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+			<TextView
+				android:id="@+id/durationLbl"
+				style="@style/GreyTextLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Duration:"
+				android:textSize="12sp" />
+			<TextView
+				android:id="@+id/duration"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="3:20"
+				android:textSize="12sp" />
+		</LinearLayout>
+	</LinearLayout>
 </LinearLayout>

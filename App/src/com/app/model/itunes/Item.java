@@ -29,7 +29,7 @@ public class Item {
 	private Integer discNumber;
 	private Integer trackCount;
 	private Integer trackNumber;
-	private String trackTimeMillis;
+	private Long trackTimeMillis;
 	private String country;
 	private String currency;
 	private String primaryGenreName;
@@ -243,11 +243,11 @@ public class Item {
 		this.trackNumber = trackNumber;
 	}
 
-	public String getTrackTimeMillis() {
+	public Long getTrackTimeMillis() {
 		return trackTimeMillis;
 	}
 
-	public void setTrackTimeMillis(String trackTimeMillis) {
+	public void setTrackTimeMillis(Long trackTimeMillis) {
 		this.trackTimeMillis = trackTimeMillis;
 	}
 

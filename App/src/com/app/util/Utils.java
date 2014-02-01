@@ -3,7 +3,10 @@ package com.app.util;
 import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.regex.Pattern;
 
@@ -381,5 +384,10 @@ public class Utils {
 					.newPlainText(text, text);
 			clipboard.setPrimaryClip(clip);
 		}
+	}
+
+	public static String convertToDuration(Long millis) {
+		return new SimpleDateFormat("mm:ss", Locale.US)
+				.format(new Date(millis));
 	}
 }

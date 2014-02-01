@@ -24,13 +24,13 @@ public class ItunesManager extends Manager {
 			HashMap<String, String> params,
 			Listener<ItunesSearchResults> listener, ErrorListener errorListener) {
 		//Validate input parameters
-		if(params==null || !params.containsKey("terms")) {
+		if(params==null || !params.containsKey("term")) {
 			throw new InvalidParameterException("term parameter is required");
 		}
 		
 		String url = SERVERLINK;
 		try {
-			url += "search" + Utils.encodedURLParameters(params);
+			url += "search?" + Utils.encodedURLParameters(params);
 		} catch (UnsupportedEncodingException e) {
 			Logger.i(TAG, e.toString());
 		}
