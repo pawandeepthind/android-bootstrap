@@ -3,7 +3,6 @@
 	package="com.app"
 	android:versionCode="1"
 	android:versionName="1" >
-	
 	<!-- To check when the network connection changes -->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -28,6 +27,7 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		<activity android:name="com.app.activities.TestActivity" />
 		<service android:name="com.app.services.ProfileSyncIntentService" />
 		<receiver android:name="com.app.receivers.UserProfileRespReceiver" />
 	</application>

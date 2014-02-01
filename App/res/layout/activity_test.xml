@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent" >
-	<Button
-		android:id="@+id/startTestActivityBtn"
+	<ListView
+		android:id="@+id/listView"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:text="Start Test Activity" />
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" >
+	</ListView>
 </RelativeLayout>

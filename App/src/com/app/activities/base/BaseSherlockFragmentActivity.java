@@ -36,8 +36,7 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class BaseSherlockFragmentActivity extends SherlockFragmentActivity {
-	private static String TAG = AppFragmentActivity.class
-			.getSimpleName();
+	private static String TAG = AppFragmentActivity.class.getSimpleName();
 
 	private BroadcastReceiver networkStateReceiver;
 	private TextView noInternetConnnectivityView, notLoadedView;
@@ -98,20 +97,21 @@ public class BaseSherlockFragmentActivity extends SherlockFragmentActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 
-		AppHelper.getRequestQueue().cancelAll(
-				new RequestQueue.RequestFilter() {
+		AppHelper.getRequestQueue().cancelAll(new RequestQueue.RequestFilter() {
 
-					@Override
-					public boolean apply(Request<?> request) {
-						if (request.getTag() != null
-								&& request.getTag().equals("image")) {
-							Logger.i(TAG, "Cancel image request with URL: "
+			@Override
+			public boolean apply(Request<?> request) {
+				if (request.getTag() != null
+						&& request.getTag().equals("image")) {
+					Logger.i(
+							TAG,
+							"Cancel image request with URL: "
 									+ request.getUrl());
-							return true;
-						}
-						return false;
-					}
-				});
+					return true;
+				}
+				return false;
+			}
+		});
 	}
 
 	public void createProgressDialog() {
@@ -261,5 +261,9 @@ public class BaseSherlockFragmentActivity extends SherlockFragmentActivity {
 
 	public void showAppMsg(String msg, Style style) {
 		Crouton.makeText(this, msg, style, R.id.container).show();
+	}
+
+	public void showToastMsg(String msg, int toastDuration) {
+		Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 	}
 }
