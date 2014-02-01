@@ -2,9 +2,7 @@ package com.app.model.error;
 
 import java.io.Serializable;
 
-import com.app.model.Dto;
-
-public class Error extends Dto implements Serializable {
+public class Error implements Serializable {
 	/**
 	 * 
 	 */

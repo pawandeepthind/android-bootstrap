@@ -1,10 +1,9 @@
 package com.app.model.error;
 
+import java.io.Serializable;
 import java.util.List;
 
-import com.app.model.Dto;
-
-public class Collection extends Dto {
+public class Collection implements Serializable {
 
 	/**
 	 * 

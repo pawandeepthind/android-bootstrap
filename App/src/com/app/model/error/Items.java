@@ -1,8 +1,8 @@
 package com.app.model.error;
 
-import com.app.model.Dto;
+import java.io.Serializable;
 
-public class Items extends Dto {
+public class Items implements Serializable {
 
 	/**
 	 * 
